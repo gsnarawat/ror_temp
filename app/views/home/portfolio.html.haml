@@ -1,0 +1,153 @@
+#templatemo_wrapper
+  #templatemo_menu
+    %ul
+      %li
+        =link_to "Blog", root_path
+      %li
+        =link_to "Portfolio", portfolio_path, :class=>"current"
+      %li
+        =link_to "About Us", about_path
+      %li
+        =link_to "Contact", contact_path
+  / end of templatemo_menu
+  #templatemo_left_column
+    #templatemo_header
+      #site_title
+        %h1
+          %a{href: "/"}
+            Blog
+            %strong on RoR
+            %span a kick start
+      / end of site_title
+    / end of header
+    #templatemo_sidebar
+      #templatemo_rss
+        %a{href: "#"}
+          SUBSCRIBE NOW
+          %br
+          %span to our rss feed
+      %h4 Categories
+      %ul.templatemo_list
+        %li
+          %a{href: "http://www.templatemo.com/page/1", target: "_parent"} Curabitur sed
+        %li
+          %a{href: "http://www.templatemo.com/page/2", target: "_parent"} Praesent adipiscing
+        %li
+          %a{href: "http://www.templatemo.com/page/3", target: "_parent"} Duis sed justo
+        %li
+          %a{href: "http://www.templatemo.com/page/4", target: "_parent"} Mauris vulputate
+        %li
+          %a{href: "#"} Nam auctor
+        %li
+          %a{href: "#"} Aliquam quam
+      .cleaner_h40
+      %h4 Friends
+      %ul.templatemo_list
+        %li
+          %a{href: "http://www.templatemo.com", target: "_parent"} Free CSS Templates
+        %li
+          %a{href: "http://www.flashmo.com", target: "_parent"} Flash Templates
+        %li
+          %a{href: "http://www.flashmo.com/store", target: "_parent"} Premium Themes
+        %li
+          %a{href: "http://www.webdesignmo.com/blog", target: "_parent"} Web Design Blog
+        %li
+          %a{href: "http://www.koflash.com", target: "_parent"} Flash Web Gallery
+        %li
+          %a{href: "#"} Curabitur sed lacinia
+        %li
+          %a{href: "#"} Vestibulum laoreet tincidunt
+        %li
+          %a{href: "#"} Nullam nec mi enim
+        %li
+          %a{href: "#"} Aliquam quam nulla
+        %li
+          %a{href: "#"} Curabitur non felis massa
+    / end of templatemo_sidebar
+  / end of templatemo_left_column
+  #templatemo_right_column
+    #templatemo_main
+      %h2 Portfolio of Web Templates
+      #gallery
+        %ul
+          %li
+            .left
+              %a.pirobox{href: "images/gallery/image_01_b.jpg", title: "Project 1"}
+                =image_tag "gallery/image_01.jpg"
+            .right
+              %h5 Project 1
+              %p
+                Integer sed nisi sapien, ut gravida mauris. Validate
+                %a{href: "http://validator.w3.org/check?uri=referer", rel: "nofollow"} XHTML
+                \&
+                = succeed "." do
+                  %a{href: "http://jigsaw.w3.org/css-validator/check/referer", rel: "nofollow"} CSS
+              .button
+                %a{href: "#"} Visit site
+            .cleaner
+          %li
+            .left
+              %a.pirobox{href: "images/gallery/image_02_b.jpg", title: "Project 2"}
+                =image_tag "gallery/image_02.jpg"
+            .right
+              %h5 Project 2
+              %p Mauris risus magna, blandit ac suscipit at, tristique id erat.
+              .button
+                %a{href: "#"} Visit site
+            .cleaner
+          %li
+            .left
+              %a.pirobox{href: "images/gallery/image_03_b.jpg", title: "Project 3"}
+                =image_tag "gallery/image_03.jpg"
+            .right
+              %h5 Project 3
+              %p Etiam eu ipsum a arcu sodales consequat sit amet at orci. Nulla in luctus elit.
+              .button
+                %a{href: "#"} Visit site
+            .cleaner
+          %li
+            .left
+              %a.pirobox{href: "images/gallery/image_04_b.jpg", title: "Project 4"}
+                =image_tag "gallery/image_04.jpg"
+            .right
+              %h5 Project 4
+              %p Divamus interdum, tortor at pellentesque pulvinar, diam quam blandit nulla.
+              .button
+                %a{href: "#"} Visit site
+            .cleaner
+          %li
+            .left
+              %a.pirobox{href: "images/gallery/image_05_b.jpg", title: "Project 5"}
+                =image_tag "gallery/image_05.jpg"
+            .right
+              %h5 Project 5
+              %p Divamus interdum, tortor at pellentesque pulvinar, diam quam blandit nulla.
+              .button
+                %a{href: "#"} Visit site
+            .cleaner
+          %li
+            .left
+              %a.pirobox{href: "images/gallery/image_06_b.jpg", title: "Project 6"}
+                =image_tag "gallery/image_06.jpg"
+            .right
+              %h5 Project 6
+              %p Divamus interdum, tortor at pellentesque pulvinar, diam quam blandit nulla.
+              .button
+                %a{href: "#"} Visit site
+            .cleaner
+    / end of main
+    .cleaner
+  / end of right column
+  .cleaner_h20
+  #templatemo_footer
+    Copyright © 2048
+    %a{href: "#"} Your Company Name
+    |
+    %a{href: "http://www.iwebsitetemplate.com", target: "_parent"} Website Templates
+    by
+    %a{href: "http://www.templatemo.com", target: "_parent"} Free CSS Templates
+  .cleaner
+/ end of warpper
+%div{align: "center"}
+  This template  downloaded form
+  %a{href: "http://all-free-download.com/free-website-templates/"} free website templates

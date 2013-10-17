@@ -5,11 +5,21 @@ gem 'rails', '4.0.0'
 gem 'haml-rails'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-gem 'mysql2'
-gem 'protected_attributes'
-gem 'pg'
 
+gem 'protected_attributes'
+
+
+group :production do
+ gem 'pg'
+end        
+
+group :test do
+ gem 'sqlite3'
+end
+
+group :development do
+ gem 'mysql2'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

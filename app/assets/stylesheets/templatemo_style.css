@@ -9,7 +9,7 @@ body {
 	font-family: Helevetica,Arial,sans-serif;
 	font-size: 13px;
 	line-height:1.5em; 
-    background-image: image-url(templatemo_body.jpg);
+    background-image: url(templatemo_body.jpg);
 	background-repeat: repeat;
 }
 

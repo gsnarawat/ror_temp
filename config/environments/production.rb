@@ -3,7 +3,7 @@ CompleteSite::Application.configure do
  
 
 
-  config.assets.precompile += %w( s3slider.js )
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 

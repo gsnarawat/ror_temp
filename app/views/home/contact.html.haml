@@ -26,6 +26,7 @@
           SUBSCRIBE NOW
           %br/
           %span to our rss feed
+        =
       %h4 Categories
       %ul.templatemo_list
         %li
@@ -93,7 +94,7 @@
                 =msg
       #contact_form
         %h2 Contact Form
-        =form_for(@home) do |f|
+        = form_for @home, :html => { :multipart => true } do |f|
           %label{for: "author"} Name:
           =f.text_field :name, placeholder: "Enter your name...", class: "required input_field"
           .cleaner_h10
@@ -102,6 +103,8 @@
           .cleaner_h10
           %label{for: "text"} Message:
           =f.text_area :message, placeholder: "Write your message", class: "required"
+          .cleaner_h10
+          =f.file_field :avatar
           .cleaner_h10
           =f.submit "Send", class: "submit_btn"
           =f.submit "Reset Form", :type => "reset", class: "submit_btn"

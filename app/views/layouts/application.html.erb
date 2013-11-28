@@ -4,6 +4,8 @@
   <title>CompleteSite</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= wicked_pdf_stylesheet_link_tag "pdf" %>
+  <%= wicked_pdf_javascript_include_tag "number_pages" %>
   <%= csrf_meta_tags %>
 </head>
 <body>

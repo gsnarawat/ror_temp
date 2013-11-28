@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'haml-rails'
+gem 'wkhtmltopdf-binary'
+gem 'wicked_pdf'
+gem 'paperclip'
 
 # Use sqlite3 as the database for Active Record
 
@@ -18,7 +21,7 @@ group :test do
  gem 'sqlite3'
 end
 
-group :development do
+group :development, :test do
  gem 'mysql2'
 end
 # Use SCSS for stylesheets
@@ -46,6 +49,12 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password
